@@ -189,6 +189,5 @@
         const settings = document.getElementById('settings');
         settings.classList.toggle('visible');
     }
-
     // Start the game
     initializeGame();
