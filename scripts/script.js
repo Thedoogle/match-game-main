@@ -184,7 +184,6 @@
         document.getElementById('matches').textContent = matchedPairs;
         initializeGame();
     }
-
     function toggleSettings() {
         const settings = document.getElementById('settings');
         settings.classList.toggle('visible');
