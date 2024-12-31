@@ -9,7 +9,7 @@
 <body>
     <div class="game-container">
         <button class="settings-toggle" onclick="toggleSettings()">
-            ⚙️ Game Settings
+            Settings
         </button>
         <div class="settings" id="settings">
             <div class="settings-group">
@@ -24,19 +24,7 @@
             </div>
 
             <div class="display" class="settings-group">
-                <label class="display" for="cardPattern">Card Back Pattern:</label>
-                <select class="display" id="cardPattern" onchange="updateCardPattern()">
-                    <option value="pattern-stripes">Stripes</option>
-                    <option value="pattern-dots">Dots</option>
-                    <option value="pattern-chevron">Chevron</option>
-                    <option value="pattern-grid">Grid</option>
-                    <option value="pattern-custom">Custom Image</option>
-                </select>
-                <span id="patternPreview" class="display" class="pattern-preview pattern-stripes"></span>
-            </div>
-            <div id="customUrlInput" class="custom-url-input">
-                <label for="cardBack">Custom Image URL:</label>
-                <input type="text" id="cardBack" placeholder="Enter image URL" onchange="updateCustomPattern()">
+                <select class="display" id="cardPattern" ></select>
             </div>
         </div>
         <div class="grid" id="grid"></div>

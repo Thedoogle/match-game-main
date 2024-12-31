@@ -68,12 +68,12 @@
     function createCard(imageUrl) {
         const card = document.createElement('div');
         const pattern = document.getElementById('cardPattern').value;
-        card.className = `card ${pattern}`;
+        card.className = `card pattern-dots`;
         card.dataset.image = imageUrl;
 
-        const size = 250;
-        card.style.width = `${size}px`;
-        card.style.height = `${size}px`;
+        // const size = 250;
+        // card.style.width = `${size}px`;
+        // card.style.height = `${size}px`;
 
         const img = document.createElement('img');
         img.src = imageUrl;
@@ -126,7 +126,7 @@
         grid.innerHTML = '';
 
         const gridSize = getGridSize(pairCount);
-        grid.style.gridTemplateColumns = `repeat(auto-fit, minmax(250px, 1fr))`;
+        grid.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
 
         cards.forEach(imageUrl => {
             const card = createCard(imageUrl);
@@ -186,7 +186,7 @@
     }
     function toggleSettings() {
         const settings = document.getElementById('settings');
-        settings.classList.toggle('visible');
+        settings.classList.toggle('display');
     }
     // Start the game
     initializeGame();
