@@ -147,8 +147,8 @@
         flippedCards.push(this);
 
         if (flippedCards.length === 2) {
-            moves++;
-            document.getElementById('moves').textContent = moves;
+            // moves++;
+            // document.getElementById('moves').textContent = moves;
             checkMatch();
         }
     }
@@ -180,8 +180,8 @@
         moves = 0;
         matchedPairs = 0;
         flippedCards = [];
-        document.getElementById('moves').textContent = moves;
-        document.getElementById('matches').textContent = matchedPairs;
+        // document.getElementById('moves').textContent = moves;
+        // document.getElementById('matches').textContent = matchedPairs;
         initializeGame();
     }
     function toggleSettings() {
