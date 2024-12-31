@@ -147,7 +147,7 @@
         flippedCards.push(this);
 
         if (flippedCards.length === 2) {
-            // moves++;
+            moves++;
             // document.getElementById('moves').textContent = moves;
             checkMatch();
         }
