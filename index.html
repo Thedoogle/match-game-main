@@ -9,7 +9,7 @@
 <body>
     <div class="game-container">
         <button class="settings-toggle" onclick="toggleSettings()">
-            Settings
+            &#9776;
         </button>
         <div class="settings" id="settings">
             <div class="settings-group">
@@ -20,6 +20,15 @@
                     <option value="8">8 Pairs</option>
                     <option value="10">10 Pairs</option>
                     <option value="12">12 Pairs</option>
+                </select>
+            </div>
+            <div id="image_group" class="settings-group">
+                <label for="images">Images:</label>
+                <select id="images" onchange="resetGame()">
+                    <option value="animals">Animals</option>
+                    <option value="spiders">Spiders</option>
+                    <option value="unicorns">Unicorns</option>
+                    <option value="all" selected>All</option>
                 </select>
             </div>
 
