@@ -159,7 +159,7 @@
             card1.classList.add('matched');
             card2.classList.add('matched');
             matchedPairs++;
-            document.getElementById('matches').textContent = matchedPairs;
+            // document.getElementById('matches').textContent = matchedPairs;
 
             const pairCount = parseInt(document.getElementById('pairCount').value);
             if (matchedPairs === pairCount) {
