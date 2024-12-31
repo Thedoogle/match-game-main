@@ -174,7 +174,6 @@ button:hover {
     display: none;
     visibility: hidden;
 }
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .game-container {
